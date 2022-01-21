@@ -73,6 +73,30 @@ class _DicePageState extends State<DicePage> {
               ),
             ),
           ],
+        ),
+        SizedBox(
+          height: 35,
+        ),
+        TextButton(
+          child: Container(
+            width: 150,
+            height: 35,
+            child: Center(
+              child: Text(
+                'Roll Both Dice',
+                style: TextStyle(color: Colors.white, fontSize: 15),
+              ),
+            ),
+            decoration: BoxDecoration(
+              color: Colors.teal[700],
+              borderRadius: BorderRadius.all(
+                Radius.circular(15),
+              ),
+            ),
+          ),
+          onPressed: (){
+            changeDiceNum(0);
+          },
         )
       ],
     );
